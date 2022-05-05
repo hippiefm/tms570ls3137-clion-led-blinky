@@ -1,0 +1,7 @@
+.launches
+.settings
+cmake-build-*
+.idea
+.ccsproject
+.cproject
+.project

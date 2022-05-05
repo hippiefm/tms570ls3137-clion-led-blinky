@@ -1,0 +1,22 @@
+
+compilers:
+
+  - description: C11 TI CGT ARM v20.2.5.LTS
+    match-sources: ".*\\.c"
+    match-language: C
+    match-compiler-exe: "(.*/)?armcl(\\.exe)?"
+    code-insight-target-name: arm
+    include-dirs: "${compiler-exe-dir}/../include"
+    defines:
+
+    defines-text: ""
+
+  - description: CPP14 TI CGT ARM v20.2.5.LTS
+    match-sources: ".*\\.cpp"
+    match-language: CPP
+    match-compiler-exe: "(.*/)?armcl(\\.exe)?"
+    code-insight-target-name: arm
+    include-dirs: ["${compiler-exe-dir}/../include/libcxx","${compiler-exe-dir}/../include"]
+    defines:
+
+    defines-text: ""
