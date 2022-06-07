@@ -32,7 +32,7 @@ get_filename_component(TOOLCHAIN_PATH ${TOOLCHAIN_PATH} DIRECTORY)
 
 set(LINKER_SCRIPT "${CMAKE_SOURCE_DIR}/source/sys_link.cmd")
 
-add_compile_options(-mv7R4 --code_state=32 --float_support=VFPv3D16 -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi)
+add_compile_options(-mv7R4 --code_state=32 --float_support=VFPv3D16 -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --c99 --c++14)
 
 include_directories(include)
 include_directories(${TOOLCHAIN_PATH}/include)
